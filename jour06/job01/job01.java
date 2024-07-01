@@ -11,5 +11,4 @@ public class job01 {
         System.out.println("Vous avez saisi : " + inputUser);
         input.close();        
     }
-    
 }

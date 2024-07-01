@@ -14,12 +14,9 @@ public class job09 {
        for (int i =0; i <= n; i++) {
         sommeC = sommeC + i*i*i;
        }
-
+       
        System.out.println(sommeC);
 
         input.close();
-
     }
-       
-    
 }

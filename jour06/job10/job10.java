@@ -20,7 +20,4 @@ public class job10 {
         input.close();
 
     }
-        
     }
-    
-}

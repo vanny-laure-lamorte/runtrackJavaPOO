@@ -17,16 +17,13 @@ public class job15 {
                 System.out.print("Vous devez saisir un chiffre supérieur à 10 : ");
             }
             
-        } while(nb < 10) ;
-
-        
+        } while(nb < 10) ;        
         
         int inverse =  reverseNumber(nb);
 
         System.out.println(inverse);
         input.close(); 
-
-        
+   
     }
 
 

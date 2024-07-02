@@ -7,39 +7,24 @@ public class Main {
     public static void main(String[] args) {
 
         // Rectangle
-        System.out.println("--- RECTANGLE ---");
-        FiguresGeometriques Rect = new FiguresGeometriques(50.30, 60.50);
-
-        System.out.println("Avant : " + Rect.getLargeur());
-        System.out.println("Avant : " + Rect.getLongueur());
-
-        Rect.setLargeur(30.20);
-        Rect.setLongueur(25.64);
-
-        System.out.println("Après : " + Rect.getLargeur());
-        System.out.println("Après : " + Rect.getLongueur());
-
+        Rectangle Rect = new Rectangle(50.30, 60.50, 10.10, 16.15);
+        Rect.affiche();  
 
         // Cercle
-        System.out.println("--- CERCLE ---");
-
-        Cercle Cer = new Cercle(20, 30, 5);
-         
+        Cercle Cer = new Cercle(20.2, 30.3, 50.2, 20.30, 20.10); 
         Cer.affiche();
+        
+       
 
-        double p1 = 10; 
-        double p2 = 20; 
+        // RectangleColore
+        RectangleColore RectC = new RectangleColore(20.2, 10.1, 4.5, 40.5, 69);
+        RectC.affiche();     
+      
+        // Figure
+        Figure fig = new Figure(10.0, 20.0);
+        fig.affiche();
 
-        if (Cer.estInterieur(p1, p2)) {
-            System.out.println("Voici la position du point : a("+ p1 +") et b(" + p2 +")." );
-            System.out.println("5. Le point est à l'intérieur du cercle.");
-        }
-        else {
-            System.out.println("5. Le point n'est pas l'intérieur du cercle.");
-
-        }
 
 
     }
-
 }

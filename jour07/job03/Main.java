@@ -12,10 +12,8 @@ public class Main {
 
         // Cercle
         Cercle Cer = new Cercle(20.2, 30.3, 50.2, 20.30, 20.10); 
-        Cer.affiche();
-        
+        Cer.affiche();      
        
-
         // RectangleColore
         RectangleColore RectC = new RectangleColore(20.2, 10.1, 4.5, 40.5, 69);
         RectC.affiche();     

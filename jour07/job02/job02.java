@@ -1,4 +1,4 @@
-package jour07.job03;
+package jour07.job02;
 
 class Erreur {
     public static void main(String[] args) {
@@ -9,9 +9,11 @@ class Erreur {
         E5 w= new E5(); 
 
         System.out.println(x.a); // Correct
-        System.out.println(y.c); // Faux
+        // System.out.println(y.c); Faux
+        System.out.println(y.b); 
         System.out.println(z.b); // Correct
-        System.out.println(v.c); // Faux
+        // System.out.println(v.c);  Faux
+        System.out.println(v.d);
         System.out.println(w.a); // Correct
                
     }

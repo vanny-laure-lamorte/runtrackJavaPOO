@@ -1,4 +1,4 @@
-package jour07.job00;
+
 public class Personne {
 
     public String nom; 

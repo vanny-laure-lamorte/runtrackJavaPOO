@@ -14,6 +14,10 @@ public class Main {
         Voiture Vo = new Voiture("BMW", 1995, 10800, 5, 4, 250, 178000);
         Vo.calculePrix(2024);
         Vo.affiche();
+
+        Voiture Vo2 = new Voiture("Renault", 1995, 1000, 5, 4, 250, 1780000000);
+        Vo2.calculePrix(2024);
+        Vo2.affiche();
     }
    
 }

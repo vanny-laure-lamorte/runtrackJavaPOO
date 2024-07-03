@@ -23,10 +23,32 @@ public void affiche() {
     System.out.println("7. Puissance: " + puissance );
     System.out.println("8. Kilométrage: " + kilometrage );
     System.out.println("9. Année Actuelle: " + anneeActuelle );
-    System.out.println("10. Prix d'achat: " );
     System.out.println();
 }
 
+@Override
+public void calculePrix(int annee) {
 
+    anneeActuelle = annee;
+    int nbAnnee = anneeActuelle - dateAchat;
+    resultat = prixAchat - (nbAnnee * 0.02); 
+
+    if (marque == "Renault" || marque == "Fiat"){
+        resultat = resultat - (prixAchat * 0.1);
+    }
+    else if ( marque == "Ferrari" || marque == "Porsche") {
+        resultat = resultat  - (prixAchat* 0.2);
+    }
+
+    int nbTrancheKilometrage = kilometrage / 10000; 
+    resultat = resultat - (prixAchat*(nbTrancheKilometrage*0.05));
+
+    if (resultat <0){
+        resultat = 0;
+    }
+
+
+
+}    
 
 }

@@ -26,7 +26,7 @@ public class Vehicules {
     public void calculePrix(int annee) {
         anneeActuelle = annee;
         int nbAnnee = anneeActuelle - dateAchat;
-        resultat = prixAchat - (nbAnnee * 0.01);   
-}    
+        resultat = prixAchat - (nbAnnee * 0.01);  
+    }    
 
 }

@@ -73,9 +73,16 @@ class ABCDEF {
         System.out.println("Il y a " + countE + " instance(s) de la classe E");
         System.out.println("Il y a " + countF + " instance(s) de la classe F");
     }
+  
+    private static void additionner(A[] as) {
+        int sum = 0;
 
+        for (A a : as) {
+            if (a instanceof D) {
+                sum += ((D) a).d;
+            }
+        }
 
-    private static void additionner(A[] as){
+        System.out.println("La somme des variables d est: " + sum);
     }
-
 }
